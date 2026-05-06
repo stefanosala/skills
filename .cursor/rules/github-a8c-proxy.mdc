@@ -1,0 +1,10 @@
+---
+description: Use local SOCKS proxy for A8c GitHub enterprise instance gh commands
+alwaysApply: true
+---
+
+# GitHub A8C Proxy
+
+- When running `gh` commands against A8c GitHub enterprise instance, set: `HTTPS_PROXY="socks5://127.0.0.1:8080"`.
+- Apply the proxy for all GitHub operations on that host (for example PR, issue, and checks commands).
+- Do not force this proxy for unrelated hosts unless explicitly requested.

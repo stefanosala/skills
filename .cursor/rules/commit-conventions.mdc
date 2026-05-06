@@ -1,0 +1,9 @@
+---
+description: Enforce commit message conventions
+alwaysApply: true
+---
+
+# Commit Conventions
+
+- Use Conventional Commit messages.
+- Prefer linking Linear work through the branch name.

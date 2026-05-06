@@ -1,0 +1,16 @@
+---
+description: Prevent direct commits on protected branches
+alwaysApply: true
+---
+
+# Git Branch Safety
+
+- Before any `git commit`, `git push`, or PR creation, run:
+  - `git branch --show-current`
+  - `git status --short -b`
+- If branch is `develop`, `main`, or `master`, stop and ask:
+  `Create/switch to a feature branch before committing?`
+- Never commit directly to `develop`, `main`, or `master` unless the user explicitly says:
+  `commit directly to <branch>`.
+- Prefer branch names based on an issue key when available (example: `pcserve-450-short-description`).
+- After a commit, report the exact branch used and whether protected local branches were modified.
