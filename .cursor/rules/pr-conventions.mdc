@@ -8,4 +8,5 @@ alwaysApply: true
 - Do not add the issue ID to the PR title unless explicitly asked.
 - When creating a PR, set the base branch to `develop` or `main` unless the user specifies otherwise.
 - When opening a PR, assign it to `@stefanosala`.
+- Use a title in conventional commit format.
 - Open PR in Draft status, unless the user specifies otherwise.
