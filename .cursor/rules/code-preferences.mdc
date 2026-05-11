@@ -1,0 +1,16 @@
+---
+description: Enforce my personal coding preferences when possible
+alwaysApply: true
+---
+
+These rules should be enforced only when writing code in a repository that doesn't have any yet.
+
+Here are my preferences:
+
+- Language: NodeJs
+- Version: Last available LTS
+- Typescript: Yes, use `tsx` to execute ts files directly
+- Env files: Load with --env-file node flag
+- Tests: Use the native test runner
+- HTTP Framework: Fastify
+- Logging library: Pino
