@@ -29,7 +29,7 @@ This repository contains reusable skills, Cursor rules, and helper scripts for a
 ### Scripts
 
 - `sync-claude-md.sh`
-  Generates `CLAUDE.md` by combining all `.cursor/rules/*.mdc` files (frontmatter stripped).
+  Generates `~/.claude/CLAUDE.md` by combining all `.cursor/rules/*.mdc` files (frontmatter stripped).
 
 ## Usage
 

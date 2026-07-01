@@ -8,7 +8,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 DEFAULT_RULES_DIR="${SCRIPT_DIR}/.cursor/rules"
-DEFAULT_OUTPUT_FILE="${SCRIPT_DIR}/CLAUDE.md"
+DEFAULT_OUTPUT_FILE="${HOME}/.claude/CLAUDE.md"
 
 RULES_DIR="${1:-$DEFAULT_RULES_DIR}"
 OUTPUT_FILE="${2:-$DEFAULT_OUTPUT_FILE}"
@@ -60,6 +60,7 @@ trap 'rm -f "$tmp_file"' EXIT
   done
 } > "$tmp_file"
 
+mkdir -p "$(dirname "$OUTPUT_FILE")"
 mv "$tmp_file" "$OUTPUT_FILE"
 trap - EXIT
 
